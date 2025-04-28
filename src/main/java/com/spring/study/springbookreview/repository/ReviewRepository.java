@@ -34,7 +34,7 @@ public class ReviewRepository {
   }
 
   public List<Review> findAllByBookId(Long bookId) {
-    String sql = "SELECT * FROM review WHERE book_id = ? ORDER BY id DESC";
+    String sql = "SELECT * FROM review WHERE bookId = ? ORDER BY id DESC";
     return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Review.class), bookId);
   }
 }

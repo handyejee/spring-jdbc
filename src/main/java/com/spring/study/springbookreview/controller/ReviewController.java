@@ -5,7 +5,6 @@ import com.spring.study.springbookreview.dto.ReviewResponseDto;
 import com.spring.study.springbookreview.service.ReviewService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
