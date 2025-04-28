@@ -1,0 +1,25 @@
+### [Review] 리뷰 등록
+POST http://localhost:8080/reviews
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "title": "재미있는 책",
+  "content": "정말 유익했어요!"
+}
+
+### [Review] 리뷰 단건 조회
+GET http://localhost:8080/reviews/1
+Accept: application/json
+
+### [Review] 리뷰 수정
+PUT http://localhost:8080/reviews/1
+Content-Type: application/json
+
+{
+  "title": "최고의 책입니다 (수정)",
+  "content": "이력서 쓸때 도움을 많이 받았어요"
+}
+
+### [Review] 리뷰 삭제
+DELETE http://localhost:8080/reviews/1

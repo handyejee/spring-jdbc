@@ -1,0 +1,26 @@
+### [Book] 책 등록
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "bookName": "리오리엔트",
+  "author": "안드레 군더 프랑크"
+}
+
+### [Book] 책 수정
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "bookName": "스프링 완전정복",
+  "author": "김영한"
+}
+
+### [Book] 책 단건 조회
+GET http://localhost:8080/books/1
+
+### [Book] 책 목록 조회
+GET http://localhost:8080/books
+
+### [Book] 책 삭제
+DELETE http://localhost:8080/books/1
